@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView 
+		android:layout_height="wrap_content" 
+		android:paddingTop="10sp" 
+		android:text="APKTool For Android" 
+		android:id="@+id/txt_hello" 
+		android:layout_width="fill_parent" 
+		android:textStyle="bold" 
+		android:gravity="center_horizontal"
+		/>
+	<EditText 
+		android:layout_height="wrap_content" 
+		android:id="@+id/txt_usrApkFile" 
+		android:layout_width="match_parent" 
+		android:text="/sdcard/apktool/test.apk"
+		android:paddingTop="10sp"
+		/>
+	<Button
+		android:id="@+id/btn_decompile"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Decompile"
+		/>
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Recompile"
+		android:id="@+id/btn_recompile"
+		/>
+    <ListView 
+    	android:id="@+id/longcat" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	/>
+</LinearLayout>
